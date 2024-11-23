@@ -1,0 +1,6 @@
+Make a tool that can check various inputs against a given regex and/or the opposite
+(generate a regex based on multiple inputs).
+
+Implement in C, C++, or Zig.
+(If implementing in C or Zig, you may need to implement a regex engine from scratch ~500-1000 LOC.)
+(Probably implement in C++.)

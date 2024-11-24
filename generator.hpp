@@ -2,7 +2,8 @@
 
 #include "utils.hpp"
 
-enum class Style {
+enum class Style 
+{
     ALPHABETIC,
     NUMERIC,
     ALPHANUMERIC,
@@ -28,7 +29,8 @@ inline std::ostream& operator<<(std::ostream& os, Style style)
 	return os;
 }
 
-class Generator {
+class Generator 
+{
 public:
     Generator(std::string tokens)
         : m_tokens(split(tokens, " "))

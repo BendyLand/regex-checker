@@ -1,6 +1,16 @@
 #include "matcher.hpp"
 #include "utils.hpp"
 
+std::string get_pattern()
+{
+	std::cout << \
+	"Welcome to match mode!\n" << \
+	"Please enter the regex pattern you would like to check against:" << std::endl;
+	std::string pattern;
+	std::getline(std::cin, pattern);
+	return pattern;
+}
+
 // Public
 void Matcher::find_token_matches(const std::vector<std::string>& tokens)
 {

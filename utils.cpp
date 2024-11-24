@@ -39,17 +39,7 @@ std::vector<std::string> split(std::string full, std::string delim)
 	return result;
 }
 
-std::string get_pattern()
-{
-	std::cout << \
-	"Welcome to match mode!\n" << \
-	"Please enter the regex pattern you would like to check against:" << std::endl;
-	std::string pattern;
-	std::getline(std::cin, pattern);
-	return pattern;
-}
-
-std::string get_list_of_tokens()
+std::string get_tokens_string()
 {
 	std::cout << std::endl << \
 	"Please enter a list of strings to check, separated by spaces:" << std::endl;

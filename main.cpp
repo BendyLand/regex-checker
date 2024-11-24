@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 void match()
 {
 	std::string pattern = get_pattern();
-	std::string token_str = get_list_of_tokens();
+	std::string token_str = get_tokens_string();
 	Matcher matcher(pattern);
 	std::vector<std::string> tokens = split(token_str, " ");
 	matcher.find_token_matches(tokens);
@@ -31,7 +31,7 @@ void match()
 void gen()
 {
 	std::cout << "Welcome to generator mode!"; 
-	std::string token_str = get_list_of_tokens();
+	std::string token_str = get_tokens_string();
 	Generator gen(token_str);
 	std::string pattern = gen.generate();
 	std::cout << "Pattern:\n" << pattern << std::endl;

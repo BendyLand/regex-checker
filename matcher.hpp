@@ -3,7 +3,8 @@
 #include <regex>
 #include <iostream>
 
-class Matcher {
+class Matcher 
+{
 public: 
     Matcher(const std::string text) 
     {
@@ -24,3 +25,4 @@ private:
     bool is_match(const std::string& str);
 };
 
+std::string get_pattern();

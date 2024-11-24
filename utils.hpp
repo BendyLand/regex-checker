@@ -18,6 +18,4 @@ std::vector<std::string> args_to_vec(int argc, char** argv);
 void print_usage();
 size_t count(std::string str, char target);
 std::vector<std::string> split(std::string full, std::string delim);
-void print_token_matches(std::vector<std::string>& tokens, std::string& pattern);
-std::string get_pattern();
-std::string get_list_of_tokens();
+std::string get_tokens_string();

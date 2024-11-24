@@ -1,12 +1,18 @@
 #pragma once
 
 #include <regex>
+#include <iostream>
 
 class Matcher {
 public: 
     Matcher(const std::string text) 
-        : pattern(std::regex(text))
-    {}
+    {
+        try { this->pattern = std::regex(text); }
+        catch (const std::regex_error& e) {
+            std::cout << "Regex error: " << e.what() << std::endl;
+            exit(EXIT_FAILURE);
+        }
+    }
     void find_token_matches(const std::vector<std::string>& tokens);
     void print_token_matches();
 private:

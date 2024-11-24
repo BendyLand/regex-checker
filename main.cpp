@@ -30,6 +30,7 @@ void match()
 
 void gen()
 {
+	std::cout << "Welcome to generator mode!"; 
 	std::string token_str = get_list_of_tokens();
 	Generator gen(token_str);
 	std::string pattern = gen.generate();

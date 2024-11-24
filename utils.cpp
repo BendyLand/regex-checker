@@ -52,7 +52,7 @@ std::string get_pattern()
 std::string get_list_of_tokens()
 {
 	std::cout << std::endl << \
-	"Now please enter a list of strings to check, separated by spaces:" << std::endl;
+	"Please enter a list of strings to check, separated by spaces:" << std::endl;
 	std::string tokens;
 	std::getline(std::cin, tokens);
 	return tokens;
